@@ -12,6 +12,11 @@ module.exports = (pluginContext) => {
           icon: path.join('assets', 'execute.png'),
           title: query,
           value: query
+        },
+        {
+          icon: path.join('assets', 'execute.png'),
+          title: 'Terminal: ' + query,
+          value: 'lxterminal -e "' + query + ';echo press any key to close...;read"'
         }]
       )
     }

@@ -4,11 +4,7 @@ const path = require('path')
 
 module.exports = (pluginContext) => {
   return (app, env = {}) => {
-    return new Promise((resolve, reject) => {
-
-      exec(app)
-
-      reject() // break chain
-    })
+    exec(app)
+    return Promise.resolve()
   }
 }
