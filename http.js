@@ -6,7 +6,7 @@ module.exports = () => {
     search: (query) => {
       return new Promise((resolve, reject) => {
         resolve([{
-          icon: 'fa-internet-explorer fab',
+          icon: 'fa-globe',
           title: query,
           subtitle: 'Open the typed url',
           value: query,

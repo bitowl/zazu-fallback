@@ -22,6 +22,14 @@
         ]
       },
       {
+        "id": "RootExec",
+        "type": "RootScript",
+        "script": "root_exec.js",
+        "connections": [
+          "Execute"
+        ]
+      },
+      {
         "id": "Root",
         "type": "RootScript",
         "script": "root.js",
@@ -35,6 +43,11 @@
         "id": "Open",
         "type": "OpenInBrowser",
         "url": "{value}"
+      },
+      {
+        "id": "Execute",
+        "type": "UserScript",
+        "script": "execute.js"
       }
     ]
   }

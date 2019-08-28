@@ -21,8 +21,8 @@ module.exports = (pluginContext) => {
           const search = searches[prefix] || prefixSearches[prefix]
           return {
             icon: search.icon || path.join('assets', prefix + '.png'),
-            title: 'Search ' + search.name + ' for ' + query,
-            value: search.url + encodeURIComponent(query)
+            title: prefix === 'Search ' + search.name + ' for ' + query,
+            value: query
           }
         })
       )
